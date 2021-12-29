@@ -1,2 +1,7 @@
 <br>
-hi
+<ul>
+<% @task.each do |t| %>
+        <li><%= t.body %></li>
+    
+<% end %>
+</ul>
