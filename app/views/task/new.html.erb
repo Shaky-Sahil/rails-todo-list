@@ -1,0 +1,8 @@
+<br>
+<%= form_with model: @task, url: "/task" do |form| %>
+    <%= form.label :task, "task" %>
+    <%= form.text_field :task %> <br> <br>
+    <%= form.label :status, "status" %>
+    <%= form.text_field :status %> <br> <br>
+    <%= form.submit "add" %> <br> 
+<% end %>
