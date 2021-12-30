@@ -14,7 +14,7 @@ class TaskController < ApplicationController
     def create
         @task = Task.new(body: params[:task][:task], status: params[:task][:status])
         if (@task.save)
-            redirect_to show_task_path
+            redirect_to task_path(@task)
         else
             render :show
         end
