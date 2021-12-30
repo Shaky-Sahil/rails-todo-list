@@ -1,4 +1,7 @@
 <br>
 <h1> <%= @task.body %> </h1>
 <br>
-<span>status: <%= @task.status %> </span>
+<span>status: <%= @task.status %> </span><br>
+<span><%= link_to "Destroy", task_path(@task),
+                  method: :delete,
+                  data: { confirm: "Are you sure?" } %></span>
